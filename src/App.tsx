@@ -13,7 +13,10 @@ const App: React.FC<Props> = () => {
             <JumbotronContainer>
                 {jumboData.map((item) => (
                     <Jumbotron direction={item.direction} key={item.id}>
-                        <p>hello</p>
+                        <p>{item.title}</p>
+                        <p>{item.subTitle}</p>
+                        <p>{item.image}</p>
+                        <p>{item.alt}</p>
                     </Jumbotron>
                 ))}
             </JumbotronContainer>

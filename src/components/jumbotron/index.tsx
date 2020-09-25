@@ -6,10 +6,10 @@ interface Props {
     direction?: string;
     restProps?: object;
 }
-const Jumbotron: React.FC<Props> = ({ direction = 'row' }) => {
+const Jumbotron: React.FC<Props> = ({ direction = 'row', children }) => {
     return (
         <Inner direction={direction}>
-            <p>Hello</p>
+            <p>{children}</p>
         </Inner>
     );
 };
