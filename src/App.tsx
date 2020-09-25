@@ -1,6 +1,12 @@
 import React from 'react';
 import jumboData from './fixtures/jumbo.json';
-import Jumbotron, { JumbotronContainer } from './components/jumbotron';
+import Jumbotron, {
+    JumbotronContainer,
+    JumbotronImage,
+    JumbotronPane,
+    JumbotronSubtitle,
+    JumbotronTitle,
+} from './components/jumbotron';
 
 interface Props {
     direction?: string;
@@ -13,10 +19,13 @@ const App: React.FC<Props> = () => {
             <JumbotronContainer>
                 {jumboData.map((item) => (
                     <Jumbotron direction={item.direction} key={item.id}>
-                        <p>{item.title}</p>
-                        <p>{item.subTitle}</p>
-                        <p>{item.image}</p>
-                        <p>{item.alt}</p>
+                        <JumbotronPane>
+                            <JumbotronTitle>{item.title}</JumbotronTitle>
+                            <JumbotronSubtitle>{item.subTitle}</JumbotronSubtitle>
+                        </JumbotronPane>
+                        <JumbotronPane>
+                            <JumbotronImage src={item.image} alt={item.alt} />
+                        </JumbotronPane>
                     </Jumbotron>
                 ))}
             </JumbotronContainer>

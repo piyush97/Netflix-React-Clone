@@ -17,3 +17,12 @@ export const Inner = styled('div')<JumbotronProps>`
 `;
 
 export const Container = styled('div')``;
+
+export const Pane = styled('div')`
+    width: 50%;
+`;
+export const Title = styled('h1')``;
+
+export const Subtitle = styled('h2')``;
+
+export const Image = styled('img')``;
