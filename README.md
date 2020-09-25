@@ -1,4 +1,7 @@
 # Netflix React Clone
 
 ### Current Status: 
-Project Setup
+- [x] Project Setup
+- [x] Styling Setup
+- [x] Jumbotron Component Made
+- [x] Global Styles
