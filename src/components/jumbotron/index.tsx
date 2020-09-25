@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Inner, Pane, Subtitle, Title, Image } from './styles/jumbotron';
+import { Container, Inner, Pane, SubTitle, Title, Image } from './styles/jumbotron';
 
 interface Props {
     children?: any;
@@ -8,26 +8,26 @@ interface Props {
     src?: string;
     alt?: string;
 }
-const Jumbotron: React.FC<Props> = ({ direction = 'row', children }) => {
+const Jumbotron = ({ direction, children }: Props) => {
     return (
         <Inner direction={direction}>
             <p>{children}</p>
         </Inner>
     );
 };
-export const JumbotronContainer: React.FC<Props> = ({ children, ...restProps }) => {
+export const JumbotronContainer = ({ restProps, children }: Props) => {
     return <Container {...restProps}>{children}</Container>;
 };
-export const JumbotronPane: React.FC<Props> = ({ children, ...restProps }) => {
+export const JumbotronPane = ({ restProps, children }: Props) => {
     return <Pane {...restProps}>{children}</Pane>;
 };
-export const JumbotronTitle: React.FC<Props> = ({ children, ...restProps }) => {
+export const JumbotronTitle = ({ restProps, children }: Props) => {
     return <Title {...restProps}>{children}</Title>;
 };
-export const JumbotronSubtitle: React.FC<Props> = ({ children, ...restProps }) => {
-    return <Subtitle {...restProps}>{children}</Subtitle>;
+export const JumbotronSubtitle = ({ restProps, children }: Props) => {
+    return <SubTitle {...restProps}>{children}</SubTitle>;
 };
-export const JumbotronImage: React.FC<Props> = ({ src, alt }) => {
+export const JumbotronImage = ({ src, alt }: Props) => {
     return <Image src={src} alt={alt} />;
 };
 export default Jumbotron;
