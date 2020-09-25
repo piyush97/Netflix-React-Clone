@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Inner, Pane, SubTitle, Title, Image } from './styles/jumbotron';
+import { Container, Inner, Pane, SubTitle, Title, Image, Item } from './styles/jumbotron';
 
 interface Props {
     children?: any;
@@ -10,9 +10,9 @@ interface Props {
 }
 const Jumbotron = ({ direction, children }: Props) => {
     return (
-        <Inner direction={direction}>
-            <p>{children}</p>
-        </Inner>
+        <Item>
+            <Inner direction={direction}>{children}</Inner>
+        </Item>
     );
 };
 export const JumbotronContainer = ({ restProps, children }: Props) => {
