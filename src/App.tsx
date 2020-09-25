@@ -1,12 +1,23 @@
 import React from 'react';
-import Jumbotron from './components/jumbotron';
+import jumboData from './fixtures/jumbo.json';
+import Jumbotron, { JumbotronContainer } from './components/jumbotron';
 
-function App() {
-    return (
-        <div className="App">
-            <Jumbotron />
-        </div>
-    );
+interface Props {
+    direction?: string;
+    children?: object;
 }
 
+const App: React.FC<Props> = () => {
+    return (
+        <>
+            <JumbotronContainer>
+                {jumboData.map((item) => (
+                    <Jumbotron direction={item.direction} key={item.id}>
+                        <p>hello</p>
+                    </Jumbotron>
+                ))}
+            </JumbotronContainer>
+        </>
+    );
+};
 export default App;
