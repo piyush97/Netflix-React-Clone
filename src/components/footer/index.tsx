@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from './styles/footer';
+import { Container, Row } from './styles/footer';
 
 interface Props {
     children?: object;
@@ -7,5 +7,8 @@ interface Props {
 }
 const Footer = ({ children, ...restProps }: Props) => {
     return <Container {...restProps}>{children}</Container>;
+};
+Footer.Row = ({ children, ...restProps }: Props) => {
+    return <Row {...restProps}>{children}</Row>;
 };
 export default Footer;
