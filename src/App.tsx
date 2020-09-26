@@ -1,6 +1,11 @@
 import React from 'react';
+import JumbotronC from './containers/jumbotron';
 
 const App: React.FC = () => {
-    return <>hello</>;
+    return (
+        <>
+            <JumbotronC />
+        </>
+    );
 };
 export default App;
