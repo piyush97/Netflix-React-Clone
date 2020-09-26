@@ -7,7 +7,7 @@ interface Props {
     children?: object;
 }
 
-export const JumbotronC: React.FC<Props> = () => {
+export const JumbotronContainer: React.FC<Props> = () => {
     return (
         <>
             <Jumbotron.Container>
