@@ -1,10 +1,12 @@
 import React from 'react';
-import { JumbotronC } from './containers/jumbotron';
+import { FooterContainer } from './containers/footer';
+import { JumbotronContainer } from './containers/jumbotron';
 
 const App: React.FC = () => {
     return (
         <>
-            <JumbotronC />
+            <JumbotronContainer />
+            <FooterContainer />
         </>
     );
 };

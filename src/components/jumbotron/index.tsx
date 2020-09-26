@@ -15,19 +15,19 @@ const Jumbotron = ({ direction, children }: Props) => {
         </Item>
     );
 };
-export const JumbotronContainer = ({ restProps, children }: Props) => {
+Jumbotron.Container = ({ restProps, children }: Props) => {
     return <Container {...restProps}>{children}</Container>;
 };
-export const JumbotronPane = ({ restProps, children }: Props) => {
+Jumbotron.Pane = ({ restProps, children }: Props) => {
     return <Pane {...restProps}>{children}</Pane>;
 };
-export const JumbotronTitle = ({ restProps, children }: Props) => {
+Jumbotron.Title = ({ restProps, children }: Props) => {
     return <Title {...restProps}>{children}</Title>;
 };
-export const JumbotronSubtitle = ({ restProps, children }: Props) => {
+Jumbotron.Subtitle = ({ restProps, children }: Props) => {
     return <SubTitle {...restProps}>{children}</SubTitle>;
 };
-export const JumbotronImage = ({ src, alt }: Props) => {
+Jumbotron.Image = ({ src, alt }: Props) => {
     return <Image src={src} alt={alt} />;
 };
 export default Jumbotron;
