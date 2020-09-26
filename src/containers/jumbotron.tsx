@@ -1,19 +1,20 @@
 import React from 'react';
 import jumboData from '../fixtures/jumbo.json';
-import Jumbotron, {
+import {
+    Jumbotron,
     JumbotronContainer,
     JumbotronImage,
     JumbotronPane,
     JumbotronSubtitle,
     JumbotronTitle,
-} from '../components/jumbotron';
+} from '../components';
 
 interface Props {
     direction?: string;
     children?: object;
 }
 
-const JumbotronC: React.FC<Props> = () => {
+export const JumbotronC: React.FC<Props> = () => {
     return (
         <>
             <JumbotronContainer>
@@ -32,4 +33,3 @@ const JumbotronC: React.FC<Props> = () => {
         </>
     );
 };
-export default JumbotronC;

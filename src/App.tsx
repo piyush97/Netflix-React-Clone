@@ -1,5 +1,5 @@
 import React from 'react';
-import JumbotronC from './containers/jumbotron';
+import { JumbotronC } from './containers/jumbotron';
 
 const App: React.FC = () => {
     return (
