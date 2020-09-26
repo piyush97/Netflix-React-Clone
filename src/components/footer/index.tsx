@@ -4,6 +4,7 @@ import { Column, Container, Link, Row, Title, Text, Break } from './styles/foote
 interface Props {
     children?: any;
     restProps?: any;
+    href?: string;
 }
 const Footer = ({ children, ...restProps }: Props) => {
     return <Container {...restProps}>{children}</Container>;
