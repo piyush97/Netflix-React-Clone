@@ -13,7 +13,7 @@ interface Props {
     children?: object;
 }
 
-const App: React.FC<Props> = () => {
+const Jumbotron: React.FC<Props> = () => {
     return (
         <>
             <JumbotronContainer>
@@ -32,4 +32,4 @@ const App: React.FC<Props> = () => {
         </>
     );
 };
-export default App;
+export default Jumbotron;
