@@ -1,9 +1,17 @@
 import React, { useState, useContext, createContext } from 'react';
 import { Container, Frame, Title, Item, Inner, Header, Body } from './styles/accordian';
 
-const ToggleContext = createContext();
+interface Props {
+    children?: any;
+    restProps?: any;
+    toggleShow?: boolean;
+}
+const ToggleContext = createContext<{ toggleShow: boolean; setToggleShow: any }>({
+    toggleShow: false,
+    setToggleShow: null,
+});
 
-export default function Accordion({ children, ...restProps }) {
+export default function Accordion({ children, ...restProps }: Props) {
     return (
         <Container {...restProps}>
             <Inner>{children}</Inner>
@@ -11,15 +19,15 @@ export default function Accordion({ children, ...restProps }) {
     );
 }
 
-Accordion.Title = function AccordionTitle({ children, ...restProps }) {
+Accordion.Title = function AccordionTitle({ children, ...restProps }: Props) {
     return <Title {...restProps}>{children}</Title>;
 };
 
-Accordion.Frame = function AccordionFrame({ children, ...restProps }) {
+Accordion.Frame = function AccordionFrame({ children, ...restProps }: Props) {
     return <Frame {...restProps}>{children}</Frame>;
 };
 
-Accordion.Item = function AccordionItem({ children, ...restProps }) {
+Accordion.Item = function AccordionItem({ children, ...restProps }: Props) {
     const [toggleShow, setToggleShow] = useState(false);
 
     return (
@@ -29,7 +37,7 @@ Accordion.Item = function AccordionItem({ children, ...restProps }) {
     );
 };
 
-Accordion.Header = function AccordionHeader({ children, ...restProps }) {
+Accordion.Header = function AccordionHeader({ children, ...restProps }: Props) {
     const { toggleShow, setToggleShow } = useContext(ToggleContext);
 
     return (
@@ -44,7 +52,7 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
     );
 };
 
-Accordion.Body = function AccordionBody({ children, ...restProps }) {
+Accordion.Body = function AccordionBody({ children, ...restProps }: Props) {
     const { toggleShow } = useContext(ToggleContext);
 
     return toggleShow ? <Body {...restProps}>{children}</Body> : null;
