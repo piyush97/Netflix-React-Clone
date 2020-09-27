@@ -1,15 +1,21 @@
 import React from 'react';
-import { FaqsContainer } from './containers/faqs';
-import { FooterContainer } from './containers/footer';
-import { JumbotronContainer } from './containers/jumbotron';
+import { Router, RouteComponentProps } from '@reach/router';
+import Home from './pages/home';
+import * as ROUTES from './constants/routes';
+import { Browse, Signin, Signup } from './pages';
 
-const App: React.FC = () => {
+interface Props extends RouteComponentProps {
+    path?: string;
+}
+const App: React.FC<Props> = () => {
     return (
-        <>
-            <JumbotronContainer />
-            <FaqsContainer />
-            <FooterContainer />
-        </>
+        <Router>
+            <Home path={ROUTES.HOME} />
+            <Signin path={ROUTES.SIGN_IN} />
+            <Browse path={ROUTES.BROWSE} />
+            <Signup path={ROUTES.SIGN_UP} />
+        </Router>
     );
 };
+
 export default App;

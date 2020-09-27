@@ -11,3 +11,4 @@
 -   [x] Footer made
 -   [x] Accordian
 -   [x] Opt In form
+-   [x] Reach Router Setup
