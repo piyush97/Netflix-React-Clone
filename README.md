@@ -10,3 +10,4 @@
 -   [x] Global Styles
 -   [x] Footer made
 -   [x] Accordian
+-   [x] Opt In form
