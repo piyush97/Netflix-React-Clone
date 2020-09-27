@@ -9,3 +9,4 @@
 -   [x] Jumbotron Component Made
 -   [x] Global Styles
 -   [x] Footer made
+-   [x] Accordian
