@@ -3,7 +3,7 @@ import { Link as ReachRouterLink } from '@reach/router';
 
 interface HeaderProps {
     src?: string;
-    dontShowOnSmallViewPort?: boolean;
+    dontShowOnSmallViewPort?: any;
     active?: any;
 }
 export const Background = styled.div<HeaderProps>`
