@@ -3,6 +3,7 @@ import { RouteComponentProps } from '@reach/router';
 import { FaqsContainer } from '../containers/faqs';
 import { FooterContainer } from '../containers/footer';
 import { JumbotronContainer } from '../containers/jumbotron';
+import { HeaderContainer } from '../containers/header';
 
 interface Props extends RouteComponentProps {
     path?: string;
@@ -10,6 +11,7 @@ interface Props extends RouteComponentProps {
 const Home: React.FC<Props> = () => {
     return (
         <>
+            <HeaderContainer />
             <JumbotronContainer />
             <FaqsContainer />
             <FooterContainer />
