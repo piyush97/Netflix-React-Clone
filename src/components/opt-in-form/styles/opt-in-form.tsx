@@ -4,9 +4,9 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     height: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     flex-wrap: wrap;
-
+    margin-bottom: 120px;
     @media (max-width: 1000px) {
         flex-direction: column;
         align-items: center;
