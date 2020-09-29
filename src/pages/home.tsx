@@ -18,11 +18,13 @@ const Home: React.FC<Props> = () => {
                     <Feature.SubTitle>Watch anywhere. Cancel at any time.</Feature.SubTitle>
                 </Feature>
                 <OptInForm>
-                    <OptInForm.Input placeholder="Email Address" />
-                    <OptInForm.Button>Try it now</OptInForm.Button>
                     <OptInForm.Text>
                         Ready to watch? Enter your email to create or restart your membership.
                     </OptInForm.Text>
+                    {/* Jugaad workaround */}
+                    <div style={{ width: '100vw' }} />
+                    <OptInForm.Input placeholder="Email Address" />
+                    <OptInForm.Button>Try it now</OptInForm.Button>
                 </OptInForm>
             </HeaderContainer>
             <JumbotronContainer />
