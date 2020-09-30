@@ -11,6 +11,7 @@ interface Props {
     onChange?: any;
     disabled?: boolean;
     type?: any;
+    to?: string;
 }
 
 export default function Form({ children, ...restProps }: Props) {
