@@ -1,15 +1,10 @@
-import React, { useState, useContext, createContext } from 'react';
+import React from 'react';
 import { Container, Base, Error, Title, Text, TextSmall, Link, Input, Submit } from './styles/form';
 
 interface Props {
     children?: any;
     restProps?: any;
-    toggleShow?: boolean;
 }
-const ToggleContext = createContext<{ toggleShow: boolean; setToggleShow: any }>({
-    toggleShow: false,
-    setToggleShow: null,
-});
 
 export default function Form({ children, ...restProps }: Props) {
     return <Container {...restProps}>{children}</Container>;
