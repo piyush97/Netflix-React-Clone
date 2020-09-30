@@ -31,3 +31,5 @@
 -   [x] Header component
 -   [x] Firebase Connection
 -   [x] Firebase Setup
+
+Don't forget to leave a ⭐ if you found this useful.
