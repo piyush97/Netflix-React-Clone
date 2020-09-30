@@ -13,3 +13,5 @@
 -   [x] Opt In form
 -   [x] Reach Router Setup
 -   [x] Header component
+-   [x] Firebase Connection
+-   [x] Firebase Setup
