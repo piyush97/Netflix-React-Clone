@@ -43,11 +43,11 @@ const Signin: React.FC<Props> = () => {
                         <Form.Text>
                             New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
                         </Form.Text>
-                        <Form.TextSmall>
-                            This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
-                        </Form.TextSmall>
                     </Form.Link>
-                </Form>{' '}
+                    <Form.TextSmall>
+                        This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
+                    </Form.TextSmall>
+                </Form>
             </HeaderContainer>
             <FooterContainer />
         </>
