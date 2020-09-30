@@ -4,6 +4,13 @@ import { Container, Base, Error, Title, Text, TextSmall, Link, Input, Submit } f
 interface Props {
     children?: any;
     restProps?: any;
+    onSubmit?: any;
+    method?: string;
+    placeholder?: string;
+    value?: string;
+    onChange?: any;
+    disabled?: boolean;
+    type?: any;
 }
 
 export default function Form({ children, ...restProps }: Props) {
