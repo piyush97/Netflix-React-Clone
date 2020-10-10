@@ -2,7 +2,7 @@ import React from 'react';
 import { Column, Container, Link, Row, Title, Text, Break } from './styles/footer';
 
 interface Props {
-    children?: any;
+    children?: React.ReactNode
     restProps?: any;
     href?: string;
 }

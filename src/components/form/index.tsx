@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Base, Error, Title, Text, TextSmall, Link, Input, Submit } from './styles/form';
 
 interface Props {
-    children?: any;
+    children?: React.ReactNode;
     restProps?: any;
     onSubmit?: any;
     method?: string;

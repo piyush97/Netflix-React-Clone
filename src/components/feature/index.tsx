@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, SubTitle, Title } from './styles/feature';
 
 interface Props {
-    children?: any;
+    children?: React.ReactNode
     restProps?: any;
 }
 const Feature = ({ restProps, children }: Props) => {

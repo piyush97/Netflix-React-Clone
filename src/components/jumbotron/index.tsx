@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Inner, Pane, SubTitle, Title, Image, Item } from './styles/jumbotron';
 
 interface Props {
-    children?: any;
+    children?: React.ReactNode
     direction?: string;
     restProps?: any;
     src?: string;

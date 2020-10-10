@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Text, Input, Button, Break } from './styles/opt-in-form';
 
 interface Props {
-    children?: any;
+    children?: React.ReactNode
     restProps?: any;
     placeholder?: string;
 }
