@@ -4,7 +4,7 @@ import * as ROUTES from '../constants/routes';
 import Logo from '../logo.svg';
 interface Props {
     to?: any;
-    children?: any;
+    children?: React.ReactNode
 }
 
 export const HeaderContainer: React.FC<Props> = ({ children }) => {

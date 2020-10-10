@@ -2,7 +2,7 @@ import React, { useState, useContext, createContext } from 'react';
 import { Container, Frame, Title, Item, Inner, Header, Body } from './styles/accordian';
 
 interface Props {
-    children?: any;
+    children?: React.ReactNode
     restProps?: any;
     toggleShow?: boolean;
 }

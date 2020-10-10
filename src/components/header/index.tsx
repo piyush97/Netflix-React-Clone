@@ -18,12 +18,12 @@ import {
     Logo,
 } from './styles/header';
 interface Props {
-    children?: any;
+    children?: any
     bg?: boolean;
     searchTerm?: any;
     setSearchTerm?: any;
-    src?: any;
-    alt?: any;
+    src?: string;
+    alt?: string;
     to?: any;
 }
 export default function Header({ bg = true, children, ...restProps }: Props) {
@@ -32,8 +32,8 @@ export default function Header({ bg = true, children, ...restProps }: Props) {
             {children}
         </Background>
     ) : (
-        children
-    );
+            children
+        );
 }
 Header.Frame = function HeaderFrame({ children, ...restProps }: Props) {
     return <Container {...restProps}>{children}</Container>;
@@ -41,7 +41,7 @@ Header.Frame = function HeaderFrame({ children, ...restProps }: Props) {
 Header.Group = function HeaderGroup({ children, ...restProps }: Props) {
     return <Group {...restProps}>{children}</Group>;
 };
-Header.Logo = function HeaderLogo({ ...restProps }: Props) {
+Header.Logo = function HeaderLogo({ alt, src, ...restProps }: Props) {
     return <Logo {...restProps} />;
 };
 Header.Search = function HeaderSearch({ searchTerm, setSearchTerm, ...restProps }: Props) {
