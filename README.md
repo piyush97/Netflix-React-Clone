@@ -4,19 +4,19 @@
 
 ## Make a similar by following along!
 
-[Project Setup](https://github.com/piyush97/Netflix-React-Clone/pull/1)
-[Jumbotron](https://github.com/piyush97/Netflix-React-Clone/pull/2)
-[Global Styles](https://github.com/piyush97/Netflix-React-Clone/pull/3)
-[Modules and Errors](https://github.com/piyush97/Netflix-React-Clone/pull/4)
-[Footer](https://github.com/piyush97/Netflix-React-Clone/pull/5)
-[Accordian](https://github.com/piyush97/Netflix-React-Clone/pull/6)
-[Opt in Form](https://github.com/piyush97/Netflix-React-Clone/pull/7)
-[Routes Constants](https://github.com/piyush97/Netflix-React-Clone/pull/8)
-[Header](https://github.com/piyush97/Netflix-React-Clone/pull/9)
-[Fix for Form](https://github.com/piyush97/Netflix-React-Clone/pull/10)
-[Setup Firebase](https://github.com/piyush97/Netflix-React-Clone/pull/11)
-[Firebase Initialize](https://github.com/piyush97/Netflix-React-Clone/pull/12)
-[Sign In Page](https://github.com/piyush97/Netflix-React-Clone/pull/13)
+-   [Project Setup](https://github.com/piyush97/Netflix-React-Clone/pull/1)
+-   [Jumbotron](https://github.com/piyush97/Netflix-React-Clone/pull/2)
+-   [Global Styles](https://github.com/piyush97/Netflix-React-Clone/pull/3)
+-   [Modules and Errors](https://github.com/piyush97/Netflix-React-Clone/pull/4)
+-   [Footer](https://github.com/piyush97/Netflix-React-Clone/pull/5)
+-   [Accordian](https://github.com/piyush97/Netflix-React-Clone/pull/6)
+-   [Opt in Form](https://github.com/piyush97/Netflix-React-Clone/pull/7)
+-   [Routes Constants](https://github.com/piyush97/Netflix-React-Clone/pull/8)
+-   [Header](https://github.com/piyush97/Netflix-React-Clone/pull/9)
+-   [Fix for Form](https://github.com/piyush97/Netflix-React-Clone/pull/10)
+-   [Setup Firebase](https://github.com/piyush97/Netflix-React-Clone/pull/11)
+-   [Firebase Initialize](https://github.com/piyush97/Netflix-React-Clone/pull/12)
+-   [Sign In Page](https://github.com/piyush97/Netflix-React-Clone/pull/13)
 
 ### Current Project Status:
 
